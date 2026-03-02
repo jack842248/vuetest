@@ -34,15 +34,7 @@ const router = createRouter({
                 showCarousel: true
             },
         },
-        {
-            path: '/project',
-            name: 'project',
-            component: () => import('@/views/ProjectViews.vue'),
-            meta: {
-                showSidebar: false,
-                showCarousel: false
-            },
-        },
+
         {
             path: '/about',
             name: 'About',
@@ -52,6 +44,43 @@ const router = createRouter({
                 showCarousel: true
             },
         },
+        {
+            path: '/project',
+            name: 'Project',
+            component: () => import('@/views/ProjectViews.vue'),
+            meta: {
+                showSidebar: false,
+                showCarousel: false
+            },
+        },
+        {
+            path: '/project/yocue',
+            name: 'ProjectYocue',
+            component: () => import('@/views/ProjectYocueViews.vue'),
+            meta: {
+                showSidebar: false,
+                showCarousel: false
+            },
+        },
+        {
+            path: '/project/dprc',
+            name: 'ProjectDprc',
+            component: () => import('@/views/ProjectDprcViews.vue'),
+            meta: {
+                showSidebar: false,
+                showCarousel: false
+            },
+        },
+        {
+            path: '/project/kingshield',
+            name: 'ProjectKingShield',
+            component: () => import('@/views/ProjectKingShieldViews.vue'),
+            meta: {
+                showSidebar: false,
+                showCarousel: false
+            },
+        },
+        
     ],
 });
 

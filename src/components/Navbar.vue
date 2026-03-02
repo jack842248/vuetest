@@ -67,9 +67,7 @@ const route = useRoute();
 
 //監聽滾動事件以改變選單按鈕的樣式
 const isScrolled = ref(false);
-const onScroll = () => {
-    console.log("我滾動了isScrolled",isScrolled.value);
-    
+const onScroll = () => {    
     isScrolled.value = window.scrollY > 100
 }
 
