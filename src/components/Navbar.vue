@@ -8,7 +8,7 @@
                 @click="uiStore.toggleMenu()"
                 ref="toggleButtonRef">
                 <span class="navbar-toggler-line"></span>
-                <span class="navbar-toggler-line group-hover:w-5"></span>
+                <span class="navbar-toggler-line group-hover:w-5 group-hover:bg-emerald-700"></span>
                 <span class="navbar-toggler-line group-hover:w-6"></span>
             </button>
             <TransitionRoot
@@ -21,7 +21,7 @@
                 leaveTo="translate-x-full"
                 class="fixed top-0 bottom-0 right-0 w-full md:w-64 transition-all">
                 <nav class="h-full bg-neutral-800/95 py-30 flex items-center flex-col" ref="menuRef">
-                    <div class="lg:hidden flex flex-col items-center border-b-1 pb-4 mb-4">
+                    <div class="lg:hidden flex flex-col items-center border-b pb-4 mb-4">
                         <div class="relative block w-20 h-20 rounded-full overflow-hidden border-3 border-white mb-3">
                             <img class="scale-800 -translate-y-8" src="/images/img-headshot.jpg" alt="">
                         </div>

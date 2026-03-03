@@ -131,9 +131,24 @@
 		@apply !w-[80%];
 	}
 	.thumbs-swiper .swiper-slide{
-		@apply opacity-40
+		@apply opacity-40 hover:cursor-pointer
 	}
 	.thumbs-swiper .swiper-slide-thumb-active {
 		@apply opacity-100
+	}
+	.ani-move {
+		@apply group-hover:animate-[shakeX_1s_infinite]
+	}
+
+}
+@keyframes shakeX {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-5px);
+	}
+	100% {
+		transform: translateX(0px);
 	}
 }
