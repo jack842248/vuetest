@@ -44,15 +44,15 @@ const router = createRouter({
                 showCarousel: true
             },
         },
-        {
-            path: '/project',
-            name: 'Project',
-            component: () => import('@/views/ProjectList.vue'),
-            meta: {
-                showSidebar: false,
-                showCarousel: false
-            },
-        },
+        // {
+        //     path: '/project',
+        //     name: 'Project',
+        //     component: () => import('@/views/ProjectList.vue'),
+        //     meta: {
+        //         showSidebar: false,
+        //         showCarousel: false
+        //     },
+        // },
         {
             path: '/project/yocue',
             name: 'ProjectYocue',

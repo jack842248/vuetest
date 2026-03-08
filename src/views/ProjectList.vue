@@ -1,7 +1,7 @@
 <template>
     <div class="bg-neutral-800 h-screen">
         <ul class="grid grid-cols-2 md:grid-cols-3 h-screen">
-            <li>
+            <li data-aos="fade-in" data-aos-delay="200">
                 <router-link
                     to="/project/yocue"
                     class="group relative block overflow-hidden">
@@ -15,7 +15,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="400">
                 <router-link
                     to="/project/kumon"
                     class="group relative block overflow-hidden">
@@ -28,7 +28,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="600">
                 <router-link
                     to="/project/tjcos"
                     class="group relative block overflow-hidden">
@@ -41,7 +41,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="800">
                 <router-link
                     to="/project/king-shield"
                     class="group relative block overflow-hidden">
@@ -54,7 +54,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="1000">
                 <router-link
                     to="/project/house579"
                     class="group relative block overflow-hidden">
@@ -68,7 +68,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="1200">
                 <router-link
                     to="/project/home-service"
                     class="group relative block overflow-hidden">
@@ -82,7 +82,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="1400">
                 <router-link
                     to="/project/ciazhan"
                     class="group relative block overflow-hidden">
@@ -97,7 +97,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="1600">
                 <router-link
                     to="/project/dprc"
                     class="group relative block overflow-hidden">
@@ -113,7 +113,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="1800">
                 <router-link
                     to="/project/magic-abc"
                     class="group relative block overflow-hidden">
@@ -127,7 +127,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="2000">
                 <router-link
                     to="/project/cycac"
                     class="group relative block overflow-hidden">
@@ -141,7 +141,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="2200">
                 <router-link
                     to="/project/digital-travel"
                     class="group relative block overflow-hidden">
@@ -155,7 +155,7 @@
                     </div>
                 </router-link>
             </li>
-            <li>
+            <li data-aos="fade-in" data-aos-delay="2400">
                 <router-link
                     to="/project/ikea"
                     class="group relative block overflow-hidden">

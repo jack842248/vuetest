@@ -25,29 +25,66 @@
                         <div class="relative block w-20 h-20 rounded-full overflow-hidden border-3 border-white mb-3">
                             <img class="scale-800 -translate-y-8" src="/images/img-headshot.jpg" alt="">
                         </div>
-                        <h3 class="text-white text-xl text-shadow-lg text-nowrap">Jack Huang</h3>
+                        <h3 class="text-white text-xl text-shadow-lg text-nowrap">
+                            黃俊傑
+                            <span class="text-white text-xs text-shadow-lg text-nowrap">Jack Huang</span>
+                        </h3>
                     </div>
-                    <ul>
+                    <ul class="border-b pb-4 mb-4">
                         <li>
                             <router-link
                                 to="/"
                                 class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
-                                部落格 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">BLOG</span>
+                                技術文章 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">Notes</span>
                             </router-link>
                         </li>
                         <li>
                             <router-link
                                 to="/project"
                                 class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
-                                作品集 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">PROJECT</span>
+                                作品集 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">Works</span>
                             </router-link>
                         </li>
                         <li>
                             <router-link
                                 to="/about"
                                 class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
-                                關於我 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">ABOUT</span>
+                                關於我 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">About</span>
                             </router-link>
+                        </li>
+                    </ul>
+                    <ul class="lg:hidden mt-auto w-40 flex justify-between">
+                        <li class="mt-1">
+                            <a
+                                class="group relative overflow-hidden block text-sm text-center w-7 hover:bg-emerald-700 rounded-full z-10"
+                                href="https://line.me/ti/p/yTrfJgiVIC"
+                                target="_blank">
+                                <img class="invert" src="/images/icon-line.svg" alt="黃俊傑的個人Line頁面">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a
+                                class="group relative overflow-hidden block text-sm text-center w-7 hover:bg-emerald-700 rounded-full z-10"
+                                href="https://github.com/jack842248?tab=repositories"
+                                target="_blank">
+                                <img class="invert" src="/images/icon-github.svg" alt="黃俊傑的個人Github頁面">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a
+                                class="group relative overflow-hidden block text-sm text-center w-7 hover:bg-emerald-700 rounded-full z-10"
+                                href="https://codepen.io/jack842248/pens/popular"
+                                target="_blank">
+                                <img class="invert" src="/images/icon-codepen.svg" alt="黃俊傑的個人Codepen頁面">
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <a
+                                class="group relative overflow-hidden block text-sm text-center w-7 hover:bg-emerald-700 rounded-full z-10"
+                                href="https://www.instagram.com/jack842248/"
+                                target="_blank">
+                                <img class="invert" src="/images/icon-instagram.svg" alt="黃俊傑的個人Instagram頁面">
+                            </a>
                         </li>
                     </ul>
                 </nav>

@@ -43,7 +43,7 @@
 		@apply w-full left-0
 	}
 	.overlay::before{
-		@apply content-["回首頁"] absolute flex justify-center items-center w-full h-full text-sm text-neutral-200 bg-neutral-900/0 z-10 top-0 left-0 origin-[-80%_80%] -rotate-45 duration-500 transition-all
+		@apply content-["關於我"] absolute flex justify-center items-center w-full h-full text-sm text-neutral-200 bg-neutral-900/0 z-10 top-0 left-0 origin-[-80%_80%] -rotate-45 duration-500 transition-all
 	}
 	.group:hover.overlay::before {
 		@apply bg-neutral-900 rotate-0
