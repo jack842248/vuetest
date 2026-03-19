@@ -17,7 +17,7 @@
         <div class="hidden lg:block absolute bottom-0 z-10">
             <div class="flex items-center m-5">
                 <router-link
-                    to="/"
+                    to="/about"
                     class="overlay group relative block w-26 h-26 rounded-full overflow-hidden border-3 border-white">
                         <img class="scale-600 -translate-y-10" src="/images/img-headshot.jpg" alt="">
                 </router-link>

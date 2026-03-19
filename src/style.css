@@ -92,43 +92,43 @@
 
 	/* 文章內容 */
 	.markdown-body h2{
-		@apply !text-xl
+		@apply text-xl!
 	}
 	.markdown-body h3{
-		@apply !text-lg
+		@apply text-lg!
 	}
 	.markdown-body h4{
-		@apply !text-base
+		@apply text-base!
 	}
 	.markdown-body h5{
-		@apply !text-sm
+		@apply text-sm!
 	}	
 	.markdown-body h6{
-		@apply !text-xs
+		@apply text-xs!
 	}			
 	.markdown-body ul {
-		@apply list-disc !pl-6
+		@apply list-disc pl-6!
 	}
 	.markdown-body ol {
-		@apply list-decimal !pl-6
+		@apply list-decimal pl-6!
 	}
 	.markdown-body ul ol,.markdown-body ol ol {
-		@apply !list-decimal
+		@apply list-decimal!
 	}
 	.markdown-body > table {
-		@apply !w-auto
+		@apply w-auto!
 	}
 	.markdown-body > ol > li > ol > li{
-		@apply !list-decimal
+		@apply list-decimal!
 	}
 	.markdown-body pre > code{
-		@apply !whitespace-break-spaces
+		@apply whitespace-break-spaces!
 	}
 	.swiper-slide > img{
 		@apply w-full h-auto object-cover
 	}
 	.project-swiper .swiper-slide {
-		@apply !w-[80%];
+		@apply w-[80%]!
 	}
 	.thumbs-swiper .swiper-slide{
 		@apply opacity-40 hover:cursor-pointer
@@ -139,7 +139,21 @@
 	.ani-move {
 		@apply group-hover:animate-[shakeX_1s_infinite]
 	}
-
+	.timeline::before {
+		@apply absolute left-7 sm:left-1/2 content-[""] bg-emerald-700 w-px -translate-x-px h-full z-1
+	}
+	.timeline-point-r::before {
+		@apply content-[""] absolute -left-4 sm:left-auto w-3.25 h-3.25 sm:right-0 sm:translate-x-1.5 top-6.25 bg-white rounded-full z-3
+	}
+	.timeline-point-r::after {
+		@apply content-[""] absolute -left-4 sm:left-auto w-2.75 h-2.75 sm:right-0 sm:translate-x-1.25 top-6.5 bg-emerald-700 outline-1 outline-emerald-700 outline-offset-1 rounded-full z-3
+	}
+	.timeline-point-l::before {
+		@apply content-[""] absolute -left-4 sm:left-0 w-3.25 h-3.25 sm:-translate-x-1.5 top-6.25 bg-white rounded-full z-3
+	}
+	.timeline-point-l::after {
+		@apply content-[""] absolute -left-4 sm:left-0 w-2.75 h-2.75 sm:-translate-x-1.5 top-6.5 bg-emerald-700 outline-1 outline-emerald-700 outline-offset-1 rounded-full z-3
+	}
 }
 @keyframes shakeX {
 	0% {
