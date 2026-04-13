@@ -1,5 +1,5 @@
 ---
-title: Vue3v-for呈現多筆資料
+title: v-for呈現多筆資料
 date: 2024-12-11
 tags: ["Vue3"]
 ---

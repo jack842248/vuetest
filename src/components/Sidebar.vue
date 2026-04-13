@@ -2,7 +2,7 @@
     <div class="flex px-3 py-5 mb-3">
         <div class="w-1 h-4 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
         <div class="grow">
-            <div class=" text-neutral-900 font-medium mb-5">Categories</div>
+            <div class="text-neutral-900 font-medium mb-5">Categories</div>
             <nav>
                 <ul class="flex flex-col gap-1 min-w-0">
                     <li

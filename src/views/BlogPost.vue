@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full grow border-l border-l-neutral-200 px-3 py-5">
+    <div class="w-full grow border-l border-l-neutral-200 px-3 py-5 overflow-auto">
         <div class="flex flex-wrap items-center mb-2">
             <div class="w-1 h-6 rounded bg-emerald-700 shrink-0 m-1 mr-2"></div>
             <h1 class="text-xl font-bold sm:text-2xl">{{ postInfo.title }}</h1>
@@ -24,7 +24,6 @@
         </Router-link>
         <hr class="my-4">
         
-
         <!-- 文章內容 -->
         <VueMarkdown 
             v-if="postContent"

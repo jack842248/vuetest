@@ -1,184 +1,46 @@
 <template>
-    <div class="bg-neutral-800 h-screen">
-        <ul class="grid grid-cols-2 md:grid-cols-3 h-screen">
-            <li data-aos="fade-in" data-aos-delay="200">
-                <router-link
-                    to="/project/yocue"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-yocue.png"
-                        alt="鉅晨科技有限公司"
-                    />
-                    <div class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        鉅晨科技有限公司
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="400">
-                <router-link
-                    to="/project/kumon"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-kumon.png"
-                        alt="KUMON學力超進化"/>
-                    <div class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        KUMON學力超進化
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="600">
-                <router-link
-                    to="/project/tjcos"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-tjcos.png"
-                        alt="台鉅美妝觀光工廠LineOA"/>
-                    <div class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        台鉅美妝觀光工廠LineOA
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="800">
-                <router-link
-                    to="/project/king-shield"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-king-shield.png"
-                        alt="先鋒智慧科技有限公司"/>
-                    <div class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        先鋒智慧科技有限公司
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="1000">
-                <router-link
-                    to="/project/house579"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-house579.png"
-                        alt="House579房屋交易買賣平台"/>
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        House579房屋交易買賣平台
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="1200">
-                <router-link
-                    to="/project/home-service"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-home-service.png"
-                        alt="居家通服務媒合平台LineOA"/>
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        居家通服務媒合平台LineOA
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="1400">
-                <router-link
-                    to="/project/ciazhan"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-ciazhan.png"
-                        alt="空間特工3D模擬鋼架"
-                    />
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        空間特工3D模擬鋼架
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="1600">
-                <router-link
-                    to="/project/dprc"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-dprc.png"
-                        alt="成功大學防災研究中心"
-                    />
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all"
-                    >
-                        成功大學防災研究中心
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="1800">
-                <router-link
-                    to="/project/magic-abc"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-magic-abc.png"
-                        alt="MagicABC兒童語言學習"/>
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        MagicABC兒童語言學習
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="2000">
-                <router-link
-                    to="/project/cycac"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-cycac.png"
-                        alt="救國團探索教育中心網站"/>
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        救國團探索教育中心網站
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="2200">
-                <router-link
-                    to="/project/digital-travel"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-digital-travel.png"
-                        alt="立吉達旅遊公司"/>
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        立吉達旅遊公司
-                    </div>
-                </router-link>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="2400">
-                <router-link
-                    to="/project/ikea"
-                    class="group relative block overflow-hidden">
-                    <img
-                        class="group-hover:scale-110 duration-1000 transition-all"
-                        src="/images/project/img-project-ikea.png"
-                        alt="IKEA測你的睡眠指數"/>
-                    <div
-                        class="absolute w-full py-2 pl-2 bg-neutral-900/90 text-neutral-100 text-sm group-hover:-translate-y-full transition-all">
-                        IKEA測你的睡眠指數
-                    </div>
-                </router-link>
-            </li>
-        </ul>
-
+    <div class="relative w-full bg-neutral-800">
+        <div class="absolute top-0 bottom-0 left-1/2 grid grid-cols-4 sm:grid-cols-7 w-full h-full -translate-x-1/2">
+            <div class="flex justify-center bg-amber-5 w-full h-full">
+                <div class="w-px bg-neutral-500/10 h-full"></div>
+            </div>
+            <div class="text-center mx-auto">
+                <div class="w-px bg-neutral-500/10 h-full"></div>
+            </div>
+            <div class="text-center mx-auto">
+                <div class="w-px bg-neutral-500/10 h-full"></div>
+            </div>
+            <div class="text-center mx-auto">
+                <div class="w-px bg-neutral-500/10 h-full"></div>
+            </div>
+            <div class="text-center mx-auto">
+                <div class="w-px bg-neutral-500/10 h-full"></div>
+            </div>
+            <div class="hidden sm:block text-center mx-auto">
+                <div class="w-px bg-neutral-500/10 h-full"></div>
+            </div>
+            <div class="hidden sm:block text-center mx-auto">
+                <div class="w-px bg-neutral-500/10 h-full"></div>
+            </div>
+        </div>
+        <router-link
+            v-if="route.name !== 'project-overview'"
+            to="/project"
+            class="w-fit group flex text-neutral-400 relative p-3 m-2 hover:text-emerald-700 z-50">
+            <ArrowLeftIcon class="ani-move size-6"></ArrowLeftIcon>回作品列表
+        </router-link>
+        <router-view></router-view>
     </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router"
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { EffectCoverflow, Pagination, FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
+import { ArrowLeftIcon, ArrowTopRightOnSquareIcon, CheckIcon } from '@heroicons/vue/20/solid';
 
+const route = useRoute();
 const modules = [EffectCoverflow, Pagination, FreeMode, Navigation, Thumbs, Autoplay];
 const thumbsSwiper = ref(null)
 const setThumbsSwiper = (swiper) => {

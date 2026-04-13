@@ -1,5 +1,5 @@
 ---
-title: Vue3v-text顯示資料
+title: v-text顯示資料
 date: 2024-12-10
 tags: ["Vue3"]
 ---

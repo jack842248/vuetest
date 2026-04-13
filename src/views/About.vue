@@ -1,8 +1,19 @@
 <template>
-    <div class="bg-neutral-100 w-full h-full">
+    <div class=" w-full h-full">
+        <div class="container mx-auto my-5">
+            <div class="sm:p-5 max-w-200 mx-auto bg-white">
+                <h1 class="text-center my-3 text-emerald-700/50 text-xl">About Me</h1>
+                <p class="relative text-sm leading-7 pb-5 px-5 sm:px-10 quotation-mark">
+                    我是俊傑，1995 年生，畢業於大葉大學多媒體設計學系，具備 <strong>前端開發與視覺設計整合能力</strong>。
+                    過去工作經驗橫跨 <strong>品牌設計、電商內容製作與網站專案開發</strong>，累積了從設計發想、影像處理、產品視覺製作到網站與 APP 介面設計、前端開發的完整實務經驗。
+                    除了視覺設計能力外，我也持續精進 <strong>Vue.js 前端框架與 RWD 響應式網頁設計</strong>，並具備與後端工程師協作、API 串接與專案開發流程經驗。
+                    我希望能持續深化前端技術能力，將 <strong>設計思維與工程技術結合</strong>，打造良好的使用體驗與高品質的網頁產品。</p>
+            </div>
+            
+        </div>
         <div class="container mx-auto my-5">
             <ul class="relative flex flex-col timeline">
-                <li class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
                     <div class="group flex flex-col sm:flex-row">
                         <div class="relative p-5 sm:text-right timeline-point-r w-full sm:w-1/2 shrink-0">
                             <span class="text-emerald-700">March, 2018</span>
@@ -16,14 +27,14 @@
                             </ul>
                         </div>
                         <div class="flex items-center max-w-100 pl-5 ml-0 sm:ml-0">
-                            <img src="/images/img-about1.png" alt="">
+                            <img src="/images/img-about1.png" alt="曼黛瑪蓮">
                         </div>
                     </div>
                 </li>
-                <li class="relative w-[calc(100%-50px)] mr-3 sm:w-full ml-auto sm:ml-auto mb-10">
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="relative w-[calc(100%-50px)] mr-3 sm:w-full ml-auto sm:ml-auto mb-10">
                     <div class="group flex flex-col sm:flex-row sm:justify-end">
-                        <div class="flex items-center max-w-100 pl-5 sm:pr-5 order-2 sm:order-1 sm:ml-0">
-                            <img src="/images/img-about2.png" alt="">
+                        <div class="flex items-center max-w-100 pl-5 sm:pl-0 sm:pr-5 order-2 sm:order-1 sm:ml-0">
+                            <img src="/images/img-about2.png" alt="Hahow好學校學習課程">
                         </div>
                         <div class="relative p-5 timeline-point-l w-full sm:w-1/2 order-1 sm:order-2 shrink-0">
                             <span class="text-emerald-700">August, 2018</span>
@@ -39,7 +50,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
                     <div class="group flex flex-col sm:flex-row">
                         <div class="relative p-5 sm:text-right timeline-point-r w-full sm:w-1/2 shrink-0">
                             <span class="text-emerald-700">January, 2012</span>
@@ -53,14 +64,14 @@
                         </ul>
                         </div>
                         <div class="flex items-center max-w-100 pl-5 ml-0 sm:ml-0">
-                            <img src="/images/img-about3.png" alt="">
+                            <img src="/images/img-about3.png" alt="六角學院學習課程">
                         </div>
                     </div>
                 </li>
-                <li class="relative w-[calc(100%-50px)] mr-3 sm:w-full ml-auto sm:ml-auto mb-10">
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="relative w-[calc(100%-50px)] mr-3 sm:w-full ml-auto sm:ml-auto mb-10">
                     <div class="group flex flex-col sm:flex-row sm:justify-end">
-                        <div class="flex items-center max-w-100 pl-5 sm:pr-5 order-2 sm:order-1 sm:ml-0">
-                            <img src="/images/img-about4.png" alt="">
+                        <div class="flex items-center max-w-100 pl-5 sm:pl-0 sm:pr-5 order-2 sm:order-1 sm:ml-0">
+                            <img src="/images/img-about4.png" alt="錫特工業電商網站">
                         </div>
                         <div class="relative p-5 timeline-point-l w-full sm:w-1/2 order-1 sm:order-2 shrink-0">
                             <span class="text-emerald-700">March, 2021</span>
@@ -76,7 +87,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
                     <div class="group flex flex-col sm:flex-row">
                         <div class="relative p-5 sm:text-right timeline-point-r w-full sm:w-1/2 shrink-0">
                             <span class="text-emerald-700">October, 2022</span>
@@ -89,14 +100,14 @@
                             </ul>
                         </div>
                         <div class="flex items-center max-w-100 pl-5 ml-0 sm:ml-0">
-                            <img src="/images/img-about5.png" alt="">
+                            <img src="/images/img-about5.png" alt="WordPress架設網站">
                         </div>
                     </div>
                 </li>
-                <li class="relative w-[calc(100%-50px)] mr-3 sm:w-full ml-auto sm:ml-auto mb-10">
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="relative w-[calc(100%-50px)] mr-3 sm:w-full ml-auto sm:ml-auto mb-10">
                     <div class="group flex flex-col sm:flex-row sm:justify-end">
-                        <div class="flex items-center max-w-100 pl-5 sm:pr-5 order-2 sm:order-1 sm:ml-0">
-                            <img src="/images/img-about6.png" alt="">
+                        <div class="flex items-center max-w-100 pl-5 sm:pl-0 sm:pr-5 order-2 sm:order-1 sm:ml-0">
+                            <img src="/images/img-about6.png" alt="鉅晨科技網站">
                         </div>
                         <div class="relative p-5 timeline-point-l w-full sm:w-1/2 order-1 sm:order-2 shrink-0">
                             <span class="text-emerald-700">June, 2023</span>
@@ -113,7 +124,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" class="relative w-[calc(100%-50px)] ml-auto sm:ml-0 mr-3 sm:mr-auto sm:w-full mb-10">
                     <div class="group flex flex-col sm:flex-row">
                         <div class="relative p-5 sm:text-right timeline-point-r w-full sm:w-1/2 shrink-0">
                             <span class="text-emerald-700">Now</span>
@@ -124,7 +135,7 @@
                             </p>
                         </div>
                         <div class="flex items-center max-w-100 pl-5 ml-0 sm:ml-0">
-                            <img src="/images/img-about7.png" alt="">
+                            <img src="/images/img-about7.png" alt="Vue前端框架">
                         </div>
                     </div>
                 </li>
@@ -132,7 +143,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-    import { ref } from 'vue'
-</script>

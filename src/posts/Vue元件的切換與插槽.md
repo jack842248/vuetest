@@ -1,5 +1,5 @@
 ---
-title: Vue元件的切換與插槽
+title: 元件的切換與插槽
 date: 2021-06-09
 tags: ["Vue"]
 ---

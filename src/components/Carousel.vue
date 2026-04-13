@@ -4,7 +4,7 @@
         :modules="modules"
         :speed="2500"
         :autoplay="{ delay: 5000 }"
-        class="relative">
+        class="relative h-75 overflow-hidden">
         <!-- 網頁標題 -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-1 w-full">
             <div class="text-center">
@@ -17,9 +17,16 @@
         <div class="hidden lg:block absolute bottom-0 z-10">
             <div class="flex items-center m-5">
                 <router-link
+                    v-if="headshotLink"
+                    to="/"
+                    class="overlay-list group relative block w-26 h-26 rounded-full overflow-hidden border-3 border-white">
+                        <img class="scale-600 -translate-y-10" src="/images/img-headshot.jpg" alt="黃俊傑的個人大頭照">
+                </router-link>
+                <router-link
+                    v-else
                     to="/about"
-                    class="overlay group relative block w-26 h-26 rounded-full overflow-hidden border-3 border-white">
-                        <img class="scale-600 -translate-y-10" src="/images/img-headshot.jpg" alt="">
+                    class="overlay-about group relative block w-26 h-26 rounded-full overflow-hidden border-3 border-white">
+                        <img class="scale-600 -translate-y-10" src="/images/img-headshot.jpg" alt="黃俊傑的個人大頭照">
                 </router-link>
                 <div class="pl-4">
                     <h3 class="text-white text-2xl text-shadow-lg text-nowrap">黃俊傑
@@ -71,34 +78,39 @@
             </div>
         </div>
         <SwiperSlide>
-            <img src="/images/banner5.jpg" alt="" />
+            <img src="/images/banner1.jpg" alt="星空照" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src="/images/banner2.jpg" alt="" />
+            <img src="/images/banner2.jpg" alt="特寫葉子水滴照" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src="/images/banner3.jpg" alt="" />
+            <img src="/images/banner4.jpg" alt="絢藍星空照" />
         </SwiperSlide>
-        <SwiperSlide>
-            <img src="/images/banner4.jpg" alt="" />
-        </SwiperSlide>
-        <!-- <SwiperSlide>
-            <img src="/images/hexagon.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <img src="/images/sphere.jpg" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-            <img src="/images/triangle.jpg" alt="" />
-        </SwiperSlide> -->
     </Swiper>
-
 </template>
 
 <script setup>
+import { ref, watch } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, EffectFade } from 'swiper/modules'
+import { useRoute } from 'vue-router';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+
+const route = useRoute();
 const modules = [ Autoplay, EffectFade ]
+
+const headshotLink = ref(false);
+
+watch(
+    () => route.name,
+    (name) => {
+        if (name === 'about') {
+            headshotLink.value = true
+        } else {
+            headshotLink.value = false
+        }
+    },
+    { immediate: true }
+)
 </script>

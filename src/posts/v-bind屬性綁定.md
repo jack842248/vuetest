@@ -1,5 +1,5 @@
 ---
-title: Vue3v-bind屬性綁定
+title: v-bind屬性綁定
 date: 2024-12-13
 tags: ["Vue3"]
 ---

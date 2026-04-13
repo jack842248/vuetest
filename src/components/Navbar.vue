@@ -23,7 +23,7 @@
                 <nav class="h-full bg-neutral-800/95 py-30 flex items-center flex-col" ref="menuRef">
                     <div class="lg:hidden flex flex-col items-center border-b pb-4 mb-4">
                         <div class="relative block w-20 h-20 rounded-full overflow-hidden border-3 border-white mb-3">
-                            <img class="scale-800 -translate-y-8" src="/images/img-headshot.jpg" alt="">
+                            <img class="scale-800 -translate-y-8" src="/images/img-headshot.jpg" alt="黃俊傑的個人大頭照">
                         </div>
                         <h3 class="text-white text-xl text-shadow-lg text-nowrap">
                             黃俊傑
@@ -35,14 +35,14 @@
                             <router-link
                                 to="/"
                                 class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
-                                技術文章 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">Notes</span>
+                                部落格 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">Articles</span>
                             </router-link>
                         </li>
                         <li>
                             <router-link
                                 to="/project"
                                 class="block text-neutral-200 group hover:text-emerald-700 py-4 px-4">
-                                作品集 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">Works</span>
+                                作品集 / <span class="text-neutral-300 text-xs group-hover:text-emerald-700">Portfolio</span>
                             </router-link>
                         </li>
                         <li>

@@ -9,6 +9,15 @@
 }
 
 @layer base {
+	html,body {
+		@apply h-full m-0
+	}
+	#app{
+		@apply min-h-full flex flex-col
+	}
+	main{
+		@apply relative flex flex-1 
+	}
 	* {
 		@apply font-work-sans;
 	}
@@ -25,13 +34,16 @@
 		@apply text-primary;
 	}
 	hr{
-		@apply border-t-4  border-t-secondary
+		@apply border-t-4 border-t-secondary
 	}
 	button {
 		@apply cursor-pointer;
 	}
 	aside{
-		@apply sticky top-0 hidden -translate-x-full lg:relative lg:block lg:basis-lg lg:translate-x-0 md:transition-transform max-w-2xs basis-2xs shrink-0
+		@apply sticky w-0 overflow-hidden top-0 left-0 shrink-0 -translate-x-full lg:w-60 lg:relative lg:translate-x-0 transition-all
+	}
+	aside.show{
+		@apply w-full shrink-0 translate-x-0 duration-500 transition-all
 	}
 }
 
@@ -42,10 +54,16 @@
 	.group:hover.btn-fill-slide::before {
 		@apply w-full left-0
 	}
-	.overlay::before{
+	.overlay-list::before {
+		@apply content-["技術文章"] absolute flex justify-center items-center w-full h-full text-sm text-neutral-200 bg-neutral-900/0 z-10 top-0 left-0 origin-[-80%_80%] -rotate-45 duration-500 transition-all
+	}
+	.group:hover.overlay-list::before {
+		@apply bg-neutral-900 rotate-0
+	}
+	.overlay-about::before{
 		@apply content-["關於我"] absolute flex justify-center items-center w-full h-full text-sm text-neutral-200 bg-neutral-900/0 z-10 top-0 left-0 origin-[-80%_80%] -rotate-45 duration-500 transition-all
 	}
-	.group:hover.overlay::before {
+	.group:hover.overlay-about::before {
 		@apply bg-neutral-900 rotate-0
 	}
 	/* 文章內容 */
@@ -121,11 +139,22 @@
 	.markdown-body > ol > li > ol > li{
 		@apply list-decimal!
 	}
+	.markdown-body pre code {
+		tab-size: 4;
+		/* 將一個 tab 顯示為 4 個空格 */
+		white-space: pre;
+		/* 保留縮排空格 */
+		display: block;
+		/* 確保每行獨立 */
+	}
 	.markdown-body pre > code{
 		@apply whitespace-break-spaces!
 	}
-	.swiper-slide > img{
-		@apply w-full h-auto object-cover
+	.swiper-slide {
+		height: 100%;
+	}
+	.swiper-slide img{
+		@apply w-full h-full object-cover
 	}
 	.project-swiper .swiper-slide {
 		@apply w-[80%]!
@@ -140,7 +169,7 @@
 		@apply group-hover:animate-[shakeX_1s_infinite]
 	}
 	.timeline::before {
-		@apply absolute left-7 sm:left-1/2 content-[""] bg-emerald-700 w-px -translate-x-px h-full z-1
+		@apply absolute left-7 sm:left-1/2 content-[""] bg-emerald-700 w-px -translate-x-px h-full -z-1
 	}
 	.timeline-point-r::before {
 		@apply content-[""] absolute -left-4 sm:left-auto w-3.25 h-3.25 sm:right-0 sm:translate-x-1.5 top-6.25 bg-white rounded-full z-3
@@ -149,10 +178,16 @@
 		@apply content-[""] absolute -left-4 sm:left-auto w-2.75 h-2.75 sm:right-0 sm:translate-x-1.25 top-6.5 bg-emerald-700 outline-1 outline-emerald-700 outline-offset-1 rounded-full z-3
 	}
 	.timeline-point-l::before {
-		@apply content-[""] absolute -left-4 sm:left-0 w-3.25 h-3.25 sm:-translate-x-1.5 top-6.25 bg-white rounded-full z-3
+		@apply content-[""] absolute -left-4 sm:left-0 w-3.25 h-3.25 sm:-translate-x-1.75 top-6.25 bg-white rounded-full z-3
 	}
 	.timeline-point-l::after {
 		@apply content-[""] absolute -left-4 sm:left-0 w-2.75 h-2.75 sm:-translate-x-1.5 top-6.5 bg-emerald-700 outline-1 outline-emerald-700 outline-offset-1 rounded-full z-3
+	}
+	.quotation-mark::before{
+		@apply hidden sm:block absolute left-0 top-0 -translate-y-5 content-["“"] text-5xl text-neutral-300
+	}
+	.quotation-mark::after {
+		@apply hidden sm:block absolute right-0 bottom-0 content-["„"] text-5xl text-neutral-300
 	}
 }
 @keyframes shakeX {

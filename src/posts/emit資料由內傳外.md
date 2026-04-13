@@ -1,7 +1,7 @@
 ---
 title: emit資料由內傳外
 date: 2024-12-27
-tags: ["Vue3"]
+tags: ["Vue"]
 ---
 ## 點擊子元件，改變父元件資料
 1. 先在父元件上建立好`data`和`methods`方法
