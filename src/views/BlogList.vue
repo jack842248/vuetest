@@ -92,7 +92,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router';
 import matter from 'gray-matter';
-import { ChevronLeftIcon, ChevronRightIcon, CalendarDaysIcon } from '@heroicons/vue/20/solid';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/20/solid';
 
 //取得當前route的id參數
 const route = useRoute();
@@ -153,7 +153,7 @@ onMounted(()=>{
         const pureText = content
             .replace(/```[\s\S]*?```/g, '')  // 去除程式碼區塊
             .replace(/<[^>]*>/g, '')         // 去除 HTML 標籤
-            .replace(/[#*`\-]/g, '')         // 去除 # * ` - 等符號
+            .replace(/[#*`-]/g, '')         // 去除 # * ` - 等符號
             .replace(/\n/g, ' ')             // 換行轉空格
             .trim();
         //取內容前150字元

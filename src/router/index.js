@@ -1,5 +1,3 @@
-import { auth } from "@/firebaseConfig.js"
-import { onAuthStateChanged } from "firebase/auth"
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
@@ -30,7 +28,7 @@ const router = createRouter({
         {
             path: '/tags/:tag?',
             name: 'tags',
-            component: () => import('@/views/Tags.vue'),
+            component: () => import('@/views/BlogTags.vue'),
             meta: {
                 showSidebar: false,
                 showCarousel: true
@@ -39,7 +37,7 @@ const router = createRouter({
         {
             path: '/about',
             name: 'about',
-            component: () => import('@/views/About.vue'),
+            component: () => import('@/views/AboutView.vue'),
             meta: {
                 showSidebar: false,
                 showCarousel: true
@@ -48,7 +46,7 @@ const router = createRouter({
         {
             path: '/login',
             name: 'login',
-            component: () => import('@/views/Login.vue')
+            component: () => import('@/views/LoginView.vue')
         },
         {
             path: '/project',
@@ -68,62 +66,62 @@ const router = createRouter({
                 {
                     path: 'yocue',
                     name: 'project-yocue',
-                    component: () => import('@/views/Yocue.vue'),
+                    component: () => import('@/views/YocueProject.vue'),
                 },
                 {
                     path: 'dprc',
                     name: 'project-dprc',
-                    component: () => import('@/views/Dprc.vue'),
+                    component: () => import('@/views/DprcProject.vue'),
                 },
                 {
                     path: 'tjcos',
                     name: 'project-tjcos',
-                    component: () => import('@/views/Tjcos.vue'),
+                    component: () => import('@/views/TjcosProject.vue'),
                 },
                 {
                     path: 'king-shield',
                     name: 'project-king-shield',
-                    component: () => import('@/views/KingShield.vue'),
+                    component: () => import('@/views/KingShieldProject.vue'),
                 },
                 {
                     path: 'house579',
                     name: 'project-house579',
-                    component: () => import('@/views/House579.vue'),
+                    component: () => import('@/views/House579Project.vue'),
                 },
                 {
                     path: 'home-service',
                     name: 'project-home-service',
-                    component: () => import('@/views/HomeService.vue'),
+                    component: () => import('@/views/HomeServiceProject.vue'),
                 },
                 {
                     path: 'ciazhan',
                     name: 'project-ciazhan',
-                    component: () => import('@/views/Ciazhan.vue'),
+                    component: () => import('@/views/CiazhanProject.vue'),
                 },
                 {
                     path: 'kumon',
                     name: 'project-kumon',
-                    component: () => import('@/views/Kumon.vue'),
+                    component: () => import('@/views/KumonProject.vue'),
                 },
                 {
                     path: 'magic-abc',
                     name: 'project-magic-abc',
-                    component: () => import('@/views/MagicAbc.vue'),
+                    component: () => import('@/views/MagicAbcProject.vue'),
                 },
                 {
                     path: 'cycac',
                     name: 'project-cycac',
-                    component: () => import('@/views/Cycac.vue'),
+                    component: () => import('@/views/CycacProject.vue'),
                 },
                 {
                     path: 'digital-travel',
                     name: 'project-digital-travel',
-                    component: () => import('@/views/DigitalTravel.vue'),
+                    component: () => import('@/views/DigitalTravelProject.vue'),
                 },
                 {
                     path: 'ikea',
                     name: 'project-ikea',
-                    component: () => import('@/views/Ikea.vue'),
+                    component: () => import('@/views/IkeaProject.vue'),
                 },
             ]
         }

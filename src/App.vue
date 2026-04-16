@@ -1,7 +1,7 @@
 <template>
   <header>
-    <Navbar></Navbar>
-    <Carousel v-if="route.meta.showCarousel"></Carousel>
+    <BlogNavbar></BlogNavbar>
+    <BlogCarousel v-if="route.meta.showCarousel"></BlogCarousel>
   </header>
   <main class="relative">
     <button
@@ -21,7 +21,7 @@
     <aside
       v-if="route.meta.showSidebar"
       :class="sidebarOpen?'show':''">
-      <Sidebar class="sticky top-0 h-screen overflow-y-auto"></Sidebar>
+      <BlogSidebar class="sticky top-0 h-screen overflow-y-auto"></BlogSidebar>
     </aside>
     <router-view
       :class="sidebarOpen?'hidden':''"
@@ -37,9 +37,9 @@
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
 import { ChevronDoubleRightIcon ,ChevronDoubleLeftIcon } from '@heroicons/vue/20/solid'
 import { useRoute } from 'vue-router';
-import Navbar from '@/components/Navbar.vue';
-import Sidebar from '@/components/Sidebar.vue';
-import Carousel from '@/components/Carousel.vue';
+import BlogNavbar from '@/components/BlogNavbar.vue';
+import BlogSidebar from '@/components/BlogSidebar.vue';
+import BlogCarousel from '@/components/BlogCarousel.vue';
 
 const route = useRoute();
 

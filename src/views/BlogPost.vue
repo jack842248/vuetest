@@ -72,13 +72,13 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { createHighlighter } from 'shiki'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import matter from 'gray-matter'
 import VueMarkdown from 'vue-markdown-render'
 import 'github-markdown-css/github-markdown-light.css'
-import { ArrowLeftIcon, ArrowRightIcon ,CalendarDaysIcon, ArrowUturnLeftIcon, ChevronDoubleLeftIcon } from '@heroicons/vue/20/solid'
+import { ArrowLeftIcon, ArrowRightIcon, ChevronDoubleLeftIcon } from '@heroicons/vue/20/solid'
 
 //文章格式選項
 const markdownOptions = ref({});

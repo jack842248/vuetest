@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full bg-neutral-800">
+    <div class="relative w-full h-full bg-neutral-800">
         <div class="absolute top-0 bottom-0 left-1/2 grid grid-cols-4 sm:grid-cols-7 w-full h-full -translate-x-1/2">
             <div class="flex justify-center bg-amber-5 w-full h-full">
                 <div class="w-px bg-neutral-500/10 h-full"></div>
@@ -34,17 +34,8 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router"
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { EffectCoverflow, Pagination, FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
-import { ArrowLeftIcon, ArrowTopRightOnSquareIcon, CheckIcon } from '@heroicons/vue/20/solid';
+import { ArrowLeftIcon } from '@heroicons/vue/20/solid';
 
 const route = useRoute();
-const modules = [EffectCoverflow, Pagination, FreeMode, Navigation, Thumbs, Autoplay];
-const thumbsSwiper = ref(null)
-const setThumbsSwiper = (swiper) => {
-    thumbsSwiper.value = swiper
-}
-
 </script>
