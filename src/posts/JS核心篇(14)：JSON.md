@@ -5,7 +5,7 @@ tags: ["JavaScript"]
 ---
 ## JSON(JavaScript Object Notation)
 * JSON是一種輕量級的資料格式，只有屬性，不支援函式或 **undefined** 。
-* 所有屬性都是**字串**型別，且一律都只用雙引號 **""** 。
+* 所有屬性都是 **字串** 型別，且一律都只用 **雙引號** 。
 * 打開Chrome→Network→Response，可查看回傳的資料。
 ```json
 {
@@ -19,7 +19,7 @@ tags: ["JavaScript"]
 ```
 
 -----------------------------------------------
-* 範例一：使用 **new XMLHttpRequest()** 。
+* 使用 **new XMLHttpRequest()** 。
 ```markdown
 you project
 │ 
@@ -28,21 +28,21 @@ you project
 └─── index.html
 ```
 ```js
-let XML = new XMLHttpRequest();
-XML.open("GET", "family.json");
-XML.onload = function() {
-    if (XML.status === 200) {
+let xhr = new XMLHttpRequest();
+xhr.open("GET", "family.json");
+xhr.onload = function() {
+    if (xhr.status === 200) {
         //這裡取到的會是JSON原始格式
-        console.log(XML.responseText);
+        console.log(xhr.responseText);
         //通常會使用parse()轉為javascript可運用的格式
-        const family = JSON.parse(XML.responseText);
+        const family = JSON.parse(xhr.responseText);
     }
 };
-XML.send();
+xhr.send();
 ```
 
 -----------------------------------------------
-* 範例二：使用 **AJAX** 套件，會直接將JSON直接轉為物件資料，省略parse()這段處理。
+* 使用 **AJAX** 套件，會直接將JSON直接轉為物件資料，省略parse()這段處理。
 ```js
 $.ajax({
   url: "網址.json",
