@@ -3,24 +3,23 @@ title: JS核心篇(30)：Async
 date: 2021-03-30
 tags: ["JavaScript"]
 ---
-## 範例一
-* async讓程式碼逐行執行。
+## fetch
 ```js
-function getData(value){
-    return new Promise((res,rej)=>{
-        setTimeout(()=>{
-            if(value){
-                res('成功');
-            }else{
-                rej('失敗');
-            }
-        },1000)
-    })
-}
+const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
 
-(async()=>{
-    
-})();
+const getData = async() => {
+    try {
+        const response = await fetch(apiUrl);
+        if(!response.ok){
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('成功', data);
+    } catch (error) {
+        console.log('沒有成功', error);
+    }
+}
+getData();
 ```
 
 -----------------------------------------------

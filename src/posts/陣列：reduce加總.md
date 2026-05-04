@@ -1,7 +1,7 @@
 ---
 title: reduce加總
 date: 2026-03-27
-tags: ["Vue"]
+tags: ["JavaScript"]
 ---
 ## 基本語法
 

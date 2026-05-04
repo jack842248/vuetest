@@ -1,7 +1,7 @@
 ---
-title: Vue3 + Swiper輪播程式碼範例
+title: Vue3+Swiper輪播
 date: 2026-02-03
-tags: ["Vue"]
+tags: ["Vue3"]
 ---
 
 1.安裝swiper

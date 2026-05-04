@@ -123,6 +123,7 @@ const onClickOutside = (event) => {
     uiStore.closeMenu()
 }
 onMounted(() => {
+        
     document.addEventListener('click', onClickOutside);
     window.addEventListener('scroll', onScroll, { passive: true });
 

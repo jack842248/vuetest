@@ -41,7 +41,18 @@ getData()
 ## Promise串接技巧(Promise chain)
 * 前一個then回傳可讓下一個then繼續執行，若有其中then不成立，則直接跳至catch。
 ```js
- vv
+function getData(){
+  return new Promise((res,rej) => {
+    setTimeout(()=>{
+      if(false){
+        res('成功');
+      }else{
+        rej('失敗');
+      }
+    },1000)
+  })
+}
+getData()
   .then(res => {
     console.log(res);
     return getData(3); //成功2
